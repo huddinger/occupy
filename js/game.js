@@ -57,7 +57,7 @@ getActivistLimit = function() {
 //
 recruitActivists = function() {
   limit = getActivistLimit()
-  add = (limit - activistCount) / 3
+  add = Math.floor()(limit - activistCount) / 3)
   activistCount = activistCount + add
 }
 
@@ -146,8 +146,8 @@ loop = function() {
   }
 
   updateUI()
-  gameLoop = window.setInterval(loop, 2000)
 }
 
 bindUI()
 loop()
+gameLoop = window.setInterval(loop, 2000)
