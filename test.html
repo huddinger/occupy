@@ -4,14 +4,53 @@
   </head>
   <body>
 
-    Activist Count: <div id="activist-count"> </div>
-    Free Activists: <div id="free-activists"> </div>
-    Repro Count: <div id="capacity-count"> </div>
-    Build Count: <div id="build-count"> </div>
-    Treehouse Count: <div id="treehouse-count"></div>
+    <h1> Occupy </h1>
 
-    <button id="increase-repro"> Increase Repro </button>
-    <button id="build-treehouse"> Build Treehouse </button>
+    Timeframe: <div id="game-timeframe"> </div>
+
+    <h2> Village Stats </h2>
+    <table>
+      <tr>
+        <th> Capacity </th>
+        <th> Villagers </th>
+        <th> Free </th>
+        <th> Repro </th>
+        <th> Builders </th>
+      </tr>
+      <tr>
+        <td> <div id="vs-capacity"> </div> </td>
+        <td> <div id="vs-villagers"> </div> </td>
+        <td> <div id="vs-free"> </div> </td>
+        <td> <div id="vs-repro"> </div> </td>
+        <td> <div id="vs-builders"> </div> </td>
+      </tr>
+    </table>
+
+    <h2> Structures </h2>
+
+    <h3> Overview </h3>
+    <table>
+      <tr>
+        <th> Treehouses </th>
+      </tr>
+      <tr>
+        <td> <div id="struct-treehouse-count"> </div> </td>
+      </tr>
+      </table>
+
+
+    <table id="structures">
+      <tr>
+        <th> Id </th>
+        <th> Type </th>
+        <th> Health </th
+        <th> Progress </th>
+        <th> Builders </th>
+      <tr>
+    </table>
+
+    <button id="action-increase-repro"> Increase Repro </button>
+    <button id="action-build-treehouse"> Build Treehouse </button>
 
     <script src="js/game.js"></script>
 
